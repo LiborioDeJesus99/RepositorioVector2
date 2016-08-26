@@ -160,6 +160,13 @@ public class Ejercicio2 extends javax.swing.JFrame {
             v = new double[l];
             JOptionPane.showMessageDialog(this, "Vector Creado Correctamente");
         }
+            cmdCrear.setEnabled(false);
+            cmdLlenarM.setEnabled(true);
+            cmdLlenarA.setEnabled(true);
+            cmdMostrar.setEnabled(false);
+            cmdBorrar.setEnabled(true);
+            txtLongitud.setEditable(false);
+
     }//GEN-LAST:event_cmdCrearActionPerformed
 
     private void cmdLlenarMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdLlenarMActionPerformed
@@ -169,6 +176,12 @@ public class Ejercicio2 extends javax.swing.JFrame {
             N = Double.parseDouble(JOptionPane.showInputDialog(this, "Digite Por Favor El Elemente En Su Posicion" + i));
             v[i] = N;
         }
+        cmdCrear.setEnabled(false);
+        cmdLlenarM.setEnabled(false);
+        cmdLlenarA.setEnabled(false);
+        cmdMostrar.setEnabled(true);
+        cmdBorrar.setEnabled(true);
+        txtLongitud.setEditable(false);
     }//GEN-LAST:event_cmdLlenarMActionPerformed
 
     private void cmdLlenarMKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_cmdLlenarMKeyTyped
